@@ -9,6 +9,6 @@ jobs:
       - name: Emit repository_dispatch
         uses: mvasigh/dispatch-action@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repo: "@"
           event_type: sample_push
