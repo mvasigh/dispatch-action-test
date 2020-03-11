@@ -1,0 +1,21 @@
+name: Dispatch build
+on: repository_dispatch
+
+jobs:
+  build:
+    name: Add to commit log
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Create local changes
+        run: |
+          echo $(date +"%T") >> commit.log
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Update commit log" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

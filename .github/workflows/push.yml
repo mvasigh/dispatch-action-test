@@ -1,0 +1,14 @@
+name: Emit event on push
+on: push
+
+jobs:
+  build:
+    name: External workflow dispatch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit repository_dispatch
+        uses: mvasigh/dispatch-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repo: "@"
+          event_type: sample_push
