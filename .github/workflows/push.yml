@@ -10,5 +10,6 @@ jobs:
         uses: mvasigh/dispatch-action@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repo: "@"
+          repo: dispatch-action-test
+          owner: mvasigh
           event_type: sample_push
