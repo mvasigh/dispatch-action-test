@@ -14,6 +14,6 @@ jobs:
           event_type: sample_push
           payload: |
             {
-              "foo": "bar",
+              "foo": ${{ github.event.head }},
               "num": 124
             }
