@@ -8,7 +8,7 @@ jobs:
     name: Add to commit log
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@add-json-payload
       - name: Create local changes
         run: |
           echo ${{ github.event.client_payload }}
