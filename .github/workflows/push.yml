@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Emit repository_dispatch
-        uses: mvasigh/dispatch-action@0d773ee965532cdbfb1f5bf8976551619068b124
+        uses: mvasigh/dispatch-action@v1.1.0-alpha
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repo: "@"
