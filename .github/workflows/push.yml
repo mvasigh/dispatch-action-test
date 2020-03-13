@@ -7,8 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Emit repository_dispatch
-        uses: mvasigh/dispatch-action@master
+        uses: mvasigh/dispatch-action@add-json-payload
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repo: "@"
           event_type: sample_push
+          payload: |
+            {
+              "foo": "bar"
+            }
