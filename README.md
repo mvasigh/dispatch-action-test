@@ -1,1 +1,2 @@
 # dispatch-action-test
+test
