@@ -14,5 +14,6 @@ jobs:
           event_type: sample_push
           payload: |
             {
-              "foo": "bar"
+              "foo": "bar",
+              "num": 124
             }
