@@ -19,6 +19,5 @@ jobs:
               "multiline": "
                 Testing a multiline JSON string
               ",
-              "baz": 1234,
-              "hello": "world"
+              "baz": 1234
             }
