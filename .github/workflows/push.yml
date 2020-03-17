@@ -17,5 +17,6 @@ jobs:
               "foo": "bar",
               "multiline": "
                 Testing a multiline JSON string
-              "
+              ",
+              "baz": 1234
             }
