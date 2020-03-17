@@ -12,3 +12,10 @@ jobs:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repo: "@"
           event_type: sample_push
+          message: |
+            {
+              "foo": "bar",
+              "multiline": "
+                Testing a multiline JSON string
+              "
+            }
