@@ -22,14 +22,6 @@ jobs:
               "baz": 123456,
               "bool": true
             }
-      - name: Emit empty object repository dispatch
-        uses: mvasigh/dispatch-action@bugfix/empty-json-payloads
-        with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          repo: "@"
-          event_type: sample_push
-          debug: 1
-          message: {}
       - name: Omit message repository dispatch
         uses: mvasigh/dispatch-action@bugfix/empty-json-payloads
         with:
