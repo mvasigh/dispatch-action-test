@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Emit repository_dispatch
-        uses: mvasigh/dispatch-action@bugfix/empty-json-payloads
+        uses: mvasigh/dispatch-action@v1.1.6
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repo: "@"
@@ -23,7 +23,7 @@ jobs:
               "bool": true
             }
       - name: Omit message repository dispatch
-        uses: mvasigh/dispatch-action@bugfix/empty-json-payloads
+        uses: mvasigh/dispatch-action@v1.1.6
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repo: "@"
